@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "797785526224",
+    "firebase_url": "https://pageant-91b24.firebaseio.com",
+    "project_id": "pageant-91b24",
+    "storage_bucket": "pageant-91b24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797785526224:android:025f7ed6bf48a07a",
+        "android_client_info": {
+          "package_name": "com.newtowels.pageant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797785526224-sug5nbkm7tfj5rg9f82k79cknhgg8jrq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newtowels.pageant",
+            "certificate_hash": "307af6f2dd39b121b453c9050190eef02b741479"
+          }
+        },
+        {
+          "client_id": "797785526224-ucki6nvktqmr49829vvd1q306ji7je1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVgHFf5SdOT3Mg-TGwgpvmgM2gdU0OC0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797785526224-ucki6nvktqmr49829vvd1q306ji7je1v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "797785526224-iti8r8f1ngrmgtg6jv274526hg14bvde.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.new-towels.pageant"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
