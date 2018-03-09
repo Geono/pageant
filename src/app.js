@@ -4,11 +4,11 @@ import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { Navigation } from 'react-native-navigation';
 import thunk from 'redux-thunk';
-import registerScreens from './components/screens';
+import registerScreens from './screens';
 import * as reducers from './reducers/index';
 import * as appActions from './actions/index';
 
-const checkMarkIcon = require('./images/checkmark.png');
+// const checkMarkIcon = require('./images/checkmark.png');
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 const reducer = combineReducers(reducers);
@@ -16,7 +16,8 @@ const store = createStoreWithMiddleware(reducer);
 
 registerScreens(store, Provider);
 
-export default class extends Component {
+export default class App extends Component {
+
     constructor(props) {
         super(props);
         store.subscribe(this.onStoreUpdate.bind(this));
@@ -40,37 +41,36 @@ export default class extends Component {
             case 'login':
                 Navigation.startSingleScreenApp({
                     screen: {
-                        screen: 'ReactNativeReduxExample.Login', // unique ID registered with Navigation.registerScreen
-                        title: 'Welcome', // title of the screen as appears in the nav bar (optional)
+                        screen: 'Intro', // unique ID registered with Navigation.registerScreen
                         navigatorStyle: {}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
                         navigatorButtons: {}, // override the nav buttons for the screen, see "Adding buttons to the navigator" below (optional)
                     },
                 });
                 return;
 
-            case 'after-login':
-                Navigation.startTabBasedApp({
-                    tabs: [
-                        {
-                            label: 'Home',
-                            screen: 'ReactNativeReduxExample.HomeTab',
-                            icon: checkMarkIcon,
-                            selectedIcon: checkMarkIcon,
-                            title: 'Hey',
-                            overrideBackPress: false,
-                            navigatorStyle: {},
-                        },
-                        {
-                            label: 'Search',
-                            screen: 'ReactNativeReduxExample.SearchTab',
-                            icon: checkMarkIcon,
-                            selectedIcon: checkMarkIcon,
-                            title: 'Hey',
-                            navigatorStyle: {},
-                        },
-                    ],
-                });
-                return;
+            // case 'after-login':
+            //     Navigation.startTabBasedApp({
+            //         tabs: [
+            //             {
+            //                 label: 'Home',
+            //                 screen: 'HomeTab',
+            //                 icon: checkMarkIcon,
+            //                 selectedIcon: checkMarkIcon,
+            //                 title: 'Hey',
+            //                 overrideBackPress: false,
+            //                 navigatorStyle: {},
+            //             },
+            //             {
+            //                 label: 'Search',
+            //                 screen: 'SearchTab',
+            //                 icon: checkMarkIcon,
+            //                 selectedIcon: checkMarkIcon,
+            //                 title: 'Hey',
+            //                 navigatorStyle: {},
+            //             },
+            //         ],
+            //     });
+            //     return;
 
             default:
                 console.log('No Root Found');

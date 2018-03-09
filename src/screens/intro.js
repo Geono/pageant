@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Text, View, Alert} from 'react-native';
+import { Alert, Button, Text, View } from 'react-native';
 import { connect } from 'react-redux';
-// import firebase from 'react-native-firebase';
-import * as appActions from '../../actions/index';
-import MyForm from "../MyForm";
+import * as appActions from '../actions/index';
+import EmailForm from '../components/login/email-form';
 
-class Login extends Component {
+class Intro extends Component {
 
     /** Changes the root value of the app to be 'after-login', changing it to tab view */
     onLoginPress() {
@@ -18,8 +17,8 @@ class Login extends Component {
 
     render() {
         return (
-            <View>
-                <MyForm onSubmit={(values) => Alert.alert('Submitted!', JSON.stringify(values))}/>
+            <View style={{ flex: 1, flexDirection: 'column', padding: 20 }}>
+                <EmailForm onSubmit={value => Alert.alert('Submitted!', value.email)} />
                 <Button large onPress={() => this.onLoginPress()} title="Continue">
                     <Text>Continue</Text>
                 </Button>
@@ -30,4 +29,4 @@ class Login extends Component {
 
 /* It does not modify the component class passed to it;
 instead, it returns a new, connected component class for you to use. */
-export default connect()(Login);
+export default connect()(Intro);

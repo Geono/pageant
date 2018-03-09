@@ -1,4 +1,4 @@
-import { reducer as formReducer } from 'redux-form';
+import { reducer as form } from 'redux-form';
 import { root } from './root.reducer';
 
 /*
@@ -8,5 +8,5 @@ import { root } from './root.reducer';
 
 export {
 	root,
-	formReducer
+	form
 };

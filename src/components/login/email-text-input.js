@@ -2,18 +2,17 @@ import React from 'react';
 import { TextInput, View } from 'react-native';
 import PropTypes from 'prop-types';
 
-import styles from './MyTextInput.styles';
+import styles from '../../styles/login/email-text-input.style';
 
 /**
  * to be wrapped with redux-form Field component
  */
-export default function MyTextInput(props) {
+export default function EmailTextInput(props) {
     const { input, meta, ...inputProps } = props;
 
-    // do not display warning if the field has not been touched or if it's currently being edited
+    // Do not display warning if the field has not been touched or if it's currently being edited
     const validationStyles = meta.touched && !meta.active
-        ? meta.valid ? styles.valid : styles.invalid
-        : null;
+        ? meta.valid ? styles.valid : styles.invalid : null;
 
     return (
         <View style={[styles.inputContainer, validationStyles]}>
@@ -29,7 +28,7 @@ export default function MyTextInput(props) {
     );
 }
 
-MyTextInput.propTypes = {
+EmailTextInput.propTypes = {
     input: PropTypes.shape({
         onBlur: PropTypes.func.isRequired,
         onChange: PropTypes.func.isRequired,
