@@ -1,3 +1,4 @@
+import { reducer as formReducer } from 'redux-form';
 import { root } from './root.reducer';
 
 /*
@@ -7,4 +8,5 @@ import { root } from './root.reducer';
 
 export {
 	root,
+	formReducer
 };

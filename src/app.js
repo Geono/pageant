@@ -29,8 +29,6 @@ export default class extends Component {
         // handle a root change
         // if your app doesn't change roots in runtime, you can remove onStoreUpdate() altogether
         // eslint-disable-next-line eqeqeq
-        console.log('currentRoot: ', this.currentRoot);
-        console.log('New root: ', root);
         if (this.currentRoot !== root) {
             this.currentRoot = root;
             this.startApp(root);
