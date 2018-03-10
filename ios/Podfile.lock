@@ -11,9 +11,6 @@ PODS:
   - Firebase/Core (4.9.0):
     - FirebaseAnalytics (= 4.0.9)
     - FirebaseCore (= 4.0.15)
-  - Firebase/Database (4.9.0):
-    - Firebase/Core
-    - FirebaseDatabase (= 4.1.4)
   - Firebase/Firestore (4.9.0):
     - Firebase/Core
     - FirebaseFirestore (= 0.10.1)
@@ -28,10 +25,6 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseCore (4.0.15):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseDatabase (4.1.4):
-    - FirebaseAnalytics (~> 4.0)
-    - FirebaseCore (~> 4.0)
-    - leveldb-library (~> 1.18)
   - FirebaseFirestore (0.10.1):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
@@ -81,7 +74,6 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
-  - Firebase/Database
   - Firebase/Firestore
 
 SPEC CHECKSUMS:
@@ -90,7 +82,6 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 388b630c15713f5dbf364071f5f3d6077fb52f4e
   FirebaseAuth: aaaf68d5064a6c8fec435758f83a43b8db26ccaa
   FirebaseCore: 3bd047463058fa6b5d312c97502c52e45401cdfb
-  FirebaseDatabase: de4446507ccd3257fca37d16f40e1540324571fd
   FirebaseFirestore: a6db7a47c6a47d26069892d7db39f7792f2f7f9a
   FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
@@ -103,6 +94,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
 
-PODFILE CHECKSUM: 81ad21ca0d3fc339c7717a2219e1a1b0820789fc
+PODFILE CHECKSUM: 9f87227d6b8d88bb35b8b86202955d752e0719b2
 
 COCOAPODS: 1.4.0

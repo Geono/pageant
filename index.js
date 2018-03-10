@@ -1,7 +1,4 @@
-// import registerApp from './src/index';
-//
-// registerApp();
+import { AppRegistry } from 'react-native';
+import App from './App';
 
-import App from './src/app';
-
-const app = new App();
+AppRegistry.registerComponent('pageant', () => App);
