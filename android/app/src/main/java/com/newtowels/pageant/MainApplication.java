@@ -38,20 +38,19 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-            new RNFirebasePackage(),
                     new RNFirebasePackage(),
                     // add/remove these packages as appropriate
-                    new RNFirebaseAdMobPackage(),
-                    new RNFirebaseAnalyticsPackage(),
+//                    new RNFirebaseAdMobPackage(),
+//                    new RNFirebaseAnalyticsPackage(),
                     new RNFirebaseAuthPackage(),
-                    new RNFirebaseRemoteConfigPackage(),
-                    new RNFirebaseCrashPackage(),
-                    new RNFirebaseDatabasePackage(),
-                    new RNFirebaseFirestorePackage(),
-                    new RNFirebaseMessagingPackage(),
-                    new RNFirebasePerformancePackage(),
-                    new RNFirebaseStoragePackage(),
-                    new RNFirebaseCrashlyticsPackage()
+//                    new RNFirebaseRemoteConfigPackage(),
+//                    new RNFirebaseCrashPackage(),
+                    new RNFirebaseDatabasePackage()
+//                    new RNFirebaseFirestorePackage(),
+//                    new RNFirebaseMessagingPackage(),
+//                    new RNFirebasePerformancePackage(),
+//                    new RNFirebaseStoragePackage(),
+//                    new RNFirebaseCrashlyticsPackage()
             );
         }
 

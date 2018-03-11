@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addNavigationHelpers, StackNavigator } from 'react-navigation';
 
-import LoginScreen from '../components/LoginScreen';
-import MainScreen from '../components/MainScreen';
-import ProfileScreen from '../components/ProfileScreen';
+import LoginScreen from '../screens/login';
+import MainScreen from '../screens/main';
+import ProfileScreen from '../screens/profile';
 import { addListener } from '../utils/redux';
 
 export const AppNavigator = StackNavigator({

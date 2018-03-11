@@ -2,7 +2,7 @@ import React from 'react';
 import { TextInput, View } from 'react-native';
 import PropTypes from 'prop-types';
 
-import styles from '../../styles/login/email-text-input.style';
+import styles from './email-text-input.style';
 
 /**
  * to be wrapped with redux-form Field component

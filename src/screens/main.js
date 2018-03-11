@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import LoginStatusMessage from './LoginStatusMessage';
-import AuthButton from './AuthButton';
+import LoginStatusMessage from '../components/login-status-message';
+import AuthButton from '../components/auth-button';
 
 const styles = StyleSheet.create({
   container: {

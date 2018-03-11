@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Alert, Button, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import * as appActions from '../actions/index';
-import EmailForm from '../components/login/email-form';
+import EmailForm from '../components/login/form/email-form';
 
 class Intro extends Component {
 

@@ -3,7 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 import { ScrollView, Text, TouchableOpacity } from 'react-native';
 
 import EmailTextInput from './email-text-input';
-import styles from '../../styles/login/email-form.style';
+import styles from './email-form.style';
 
 function EmailForm(props) {
     return (
